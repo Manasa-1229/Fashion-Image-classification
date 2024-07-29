@@ -47,3 +47,46 @@ To run this project, ensure you have the following libraries installed:
 You can install them using pip:
 ```bash
 pip install numpy pandas scikit-learn plotly
+
+## Running the Project
+
+### Data Preparation:
+- Load the Fashion MNIST dataset in chunks to handle memory efficiently. Loading data in chunks is a good practice for managing large datasets as it reduces memory usage and allows for more efficient processing.
+- Perform necessary preprocessing steps such as scaling and normalization.
+
+### Dimensionality Reduction:
+- Apply Principal Component Analysis (PCA) to reduce the dimensionality of the data. This helps in mitigating the curse of dimensionality and speeds up model training by reducing the number of features while retaining most of the variance in the data.
+
+### Model Training:
+- Implement various machine learning models including Logistic Regression, SVM, Random Forest, and KNN.
+- Use Grid Search to find the best hyperparameters for each model, ensuring optimal performance.
+
+### Model Evaluation:
+- Evaluate the models using in-sample and out-of-sample accuracy as well as AUC scores.
+- Highlight the performance of each model on different classes, focusing on identifying classes that are difficult to classify.
+
+### Model Saving:
+- Save the trained models using `pickle` for future use. Pickling is a good practice as it allows for easy deployment and reuse of models without the need to retrain, saving time and computational resources.
+
+### Visualization:
+- Create interactive visualizations using `plotly` to compare model performances and AUC scores across different classes.
+- Highlight classes that are not well-classified to identify areas for improvement.
+
+## Applications of Image Classification
+Image classification is a critical task in various domains including:
+- **Retail:** Automated tagging of product images, enhancing search and recommendation systems.
+- **Healthcare:** Classifying medical images for disease diagnosis.
+- **Autonomous Vehicles:** Object detection and classification to navigate environments safely.
+- **Security:** Facial recognition systems for authentication and surveillance.
+- **Manufacturing:** Defect detection in products for quality control.
+
+## About
+This project demonstrates the application of several machine learning techniques to a complex image classification task. It highlights the importance of data preprocessing, dimensionality reduction, and hyperparameter tuning in achieving high model performance. The use of chunk processing and model pickling showcases efficient handling of large datasets and model management practices.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+- The Fashion MNIST dataset was provided by Zalando.
+- The scikit-learn library was used for implementing the machine learning models.
+- Plotly was used for creating interactive visualizations.
