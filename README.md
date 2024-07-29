@@ -47,6 +47,7 @@ To run this project, ensure you have the following libraries installed:
 You can install them using pip:
 ```bash
 pip install numpy pandas scikit-learn plotly
+```
 
 ## Running the Project
 
