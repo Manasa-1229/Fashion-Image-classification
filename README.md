@@ -84,8 +84,6 @@ Image classification is a critical task in various domains including:
 ## About
 This project demonstrates the application of several machine learning techniques to a complex image classification task. It highlights the importance of data preprocessing, dimensionality reduction, and hyperparameter tuning in achieving high model performance. The use of chunk processing and model pickling showcases efficient handling of large datasets and model management practices.
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 - The Fashion MNIST dataset was provided by Zalando.
